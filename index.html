@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpiSentry Login</title>
-    <link rel="stylesheet" href="CSS">
-    <link rel="stylesheet" href="SCSS">
-    <link rel="stylesheet" href="JavaScript">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpiSentry Login Page</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #13485f;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    .login-container h2 {
+      text-align: center;
+    }
+    .login-container label, .login-container input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .login-container input[type="submit"] {
+      width: auto;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-          <section id="skills1" class="skills1">
-        <div class="container">
-          <h2 class="main-font" data-aos="fade-in">Welcome, Please<span class="text-blue main-font"> Log In</span></h2>
-  
-          <div class="skills1-card" data-aos="zoom-in">
-              <div class="skills1-card-column">
-                <div class="card-column-image">
-                  <img src="/img/qut-Logo.png" alt="">
-                </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
+<div class="login-container">
+    <h2>OpiSentry Login</h2>
+    <form action="https://www.example.com/dashboard" method="post">
+      <!-- Replace "https://www.example.com/dashboard" with the URL of the website you want to redirect the user to -->
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
 </body>
 </html>
+
+
+
+
+
